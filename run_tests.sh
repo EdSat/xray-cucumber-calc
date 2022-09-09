@@ -1,0 +1,1 @@
+mvn clean compile test -D cucumber.plugin="json:report.json" -D cucumber.features="features/"
