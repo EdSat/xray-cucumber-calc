@@ -3,7 +3,7 @@ package com.xray.tutorials;
 public class Calculator
 {
 
-// Square function
+// Square function bllub
 public static int Square(int num)
 {
     return num*num;
