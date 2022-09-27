@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="calculator.RunCucumberTest" time="0.284" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="calculator.RunCucumberTest" time="0.331" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.3.1+2-LTS-6"/>
@@ -63,11 +63,11 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can calculate the sum of two numbers #1" time="0.27"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can calculate the sum of two numbers #2" time="0.002"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can calculate the sum of two numbers #1" time="0.318"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can calculate the sum of two numbers #2" time="0.001"/>
   <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can calculate the sum of two numbers #3" time="0.003"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can calculate the sum of two numbers #4" time="0.001"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can calculate the sum of two numbers #4" time="0.002"/>
   <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can calculate the sum of two numbers #5" time="0.003"/>
   <testcase classname="As a user, I can calculate the sum of two numbers" name="As a user, I can multiply two numbers" time="0.002"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers" name="simple integer addition" time="0.003"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers" name="simple integer addition" time="0.002"/>
 </testsuite>
