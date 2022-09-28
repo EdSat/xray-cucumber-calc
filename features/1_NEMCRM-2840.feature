@@ -4,6 +4,7 @@ Feature: As a user, I can calculate the sum of two numbers
 	#As a user, I can calculate the sum of two numbers
 
 	#As a user, I can calculate the sum of two numbers
+	@NEMCRM-2850
 	@NEMCRM-2840
 	Scenario: simple integer addition 2
 		Given I have entered 3 into the calculator

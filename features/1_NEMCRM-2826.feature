@@ -4,6 +4,7 @@ Feature: As a user, I can calculate the sum of two numbers
 	#As a user, I can calculate the sum of two numbers
 
 	#As a user, I can calculate the sum of two numbers
+	@NEMCRM-2850
 	@NEMCRM-2826
 	Scenario: As a user, I can calculate the sum of two numbers
 		Given I have entered <input_1> into the calculator
