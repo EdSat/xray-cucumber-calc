@@ -4,7 +4,6 @@ Feature: As a user, I can calculate the sum of two numbers
 	#As a user, I can calculate the sum of two numbers
 
 	#As a user, I can multiply two numbers
-	@NEMCRM-2850
 	@NEMCRM-2825
 	Scenario: As a user, I can multiply two numbers
 		Given I have entered 1000 into the calculator

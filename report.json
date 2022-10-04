@@ -3,8 +3,8 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T14:56:06.030Z",
-        "line": 9,
+        "start_timestamp": "2022-10-04T09:47:32.420Z",
+        "line": 8,
         "name": "simple integer addition",
         "description": "",
         "id": "as-a-user--i-can-calculate-the-sum-of-two-numbers;simple-integer-addition",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1001400,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I have entered 1 into the calculator",
             "match": {
               "arguments": [
@@ -33,7 +33,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I have entered 2 into the calculator",
             "match": {
               "arguments": [
@@ -48,10 +48,10 @@
           },
           {
             "result": {
-              "duration": 1000200,
+              "duration": 212712800,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I press add",
             "match": {
               "location": "calculator.StepDefinitions.i_press_add()"
@@ -60,15 +60,16 @@
           },
           {
             "result": {
-              "duration": 1011100,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c5\u003e but was:\u003c3\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:36)\r\n\tat ✽.the result should be 5 on the screen(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2824.feature:12)\r\n",
+              "duration": 2049400,
+              "status": "failed"
             },
-            "line": 13,
-            "name": "the result should be 3 on the screen",
+            "line": 12,
+            "name": "the result should be 5 on the screen",
             "match": {
               "arguments": [
                 {
-                  "val": "3",
+                  "val": "5",
                   "offset": 21
                 }
               ],
@@ -83,9 +84,6 @@
           },
           {
             "name": "@NEMCRM-2823"
-          },
-          {
-            "name": "@NEMCRM-2850"
           },
           {
             "name": "@NEMCRM-2824"
@@ -121,8 +119,8 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T14:56:06.069Z",
-        "line": 9,
+        "start_timestamp": "2022-10-04T09:47:32.688Z",
+        "line": 8,
         "name": "As a user, I can multiply two numbers",
         "description": "",
         "id": "as-a-user--i-can-calculate-the-sum-of-two-numbers;as-a-user--i-can-multiply-two-numbers",
@@ -133,7 +131,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I have entered 1000 into the calculator",
             "match": {
               "arguments": [
@@ -150,7 +148,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I have entered 0 into the calculator",
             "match": {
               "arguments": [
@@ -167,7 +165,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I press multiply",
             "match": {
               "location": "calculator.StepDefinitions.i_press_multiply()"
@@ -178,7 +176,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "the result should be 0 on the screen",
             "match": {
               "arguments": [
@@ -198,9 +196,6 @@
           },
           {
             "name": "@NEMCRM-2823"
-          },
-          {
-            "name": "@NEMCRM-2850"
           },
           {
             "name": "@NEMCRM-2825"
@@ -236,8 +231,8 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T14:56:06.073Z",
-        "line": 17,
+        "start_timestamp": "2022-10-04T09:47:32.693Z",
+        "line": 16,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
         "id": "as-a-user--i-can-calculate-the-sum-of-two-numbers;as-a-user--i-can-calculate-the-sum-of-two-numbers;;2",
@@ -246,9 +241,10 @@
         "steps": [
           {
             "result": {
+              "duration": 999500,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I have entered 20 into the calculator",
             "match": {
               "arguments": [
@@ -265,7 +261,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I have entered 30 into the calculator",
             "match": {
               "arguments": [
@@ -282,7 +278,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I press add",
             "match": {
               "location": "calculator.StepDefinitions.i_press_add()"
@@ -293,7 +289,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "the result should be 50 on the screen",
             "match": {
               "arguments": [
@@ -315,16 +311,13 @@
             "name": "@NEMCRM-2823"
           },
           {
-            "name": "@NEMCRM-2850"
-          },
-          {
             "name": "@NEMCRM-2826"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-28T14:56:06.079Z",
-        "line": 18,
+        "start_timestamp": "2022-10-04T09:47:32.698Z",
+        "line": 17,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
         "id": "as-a-user--i-can-calculate-the-sum-of-two-numbers;as-a-user--i-can-calculate-the-sum-of-two-numbers;;3",
@@ -335,7 +328,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I have entered 2 into the calculator",
             "match": {
               "arguments": [
@@ -352,7 +345,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I have entered 5 into the calculator",
             "match": {
               "arguments": [
@@ -367,9 +360,10 @@
           },
           {
             "result": {
+              "duration": 131300,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I press add",
             "match": {
               "location": "calculator.StepDefinitions.i_press_add()"
@@ -378,9 +372,10 @@
           },
           {
             "result": {
+              "duration": 101600,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "the result should be 7 on the screen",
             "match": {
               "arguments": [
@@ -402,16 +397,13 @@
             "name": "@NEMCRM-2823"
           },
           {
-            "name": "@NEMCRM-2850"
-          },
-          {
             "name": "@NEMCRM-2826"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-28T14:56:06.081Z",
-        "line": 19,
+        "start_timestamp": "2022-10-04T09:47:32.702Z",
+        "line": 18,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
         "id": "as-a-user--i-can-calculate-the-sum-of-two-numbers;as-a-user--i-can-calculate-the-sum-of-two-numbers;;4",
@@ -422,7 +414,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I have entered 0 into the calculator",
             "match": {
               "arguments": [
@@ -439,7 +431,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I have entered 40 into the calculator",
             "match": {
               "arguments": [
@@ -456,7 +448,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I press add",
             "match": {
               "location": "calculator.StepDefinitions.i_press_add()"
@@ -467,7 +459,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "the result should be 40 on the screen",
             "match": {
               "arguments": [
@@ -489,16 +481,13 @@
             "name": "@NEMCRM-2823"
           },
           {
-            "name": "@NEMCRM-2850"
-          },
-          {
             "name": "@NEMCRM-2826"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-28T14:56:06.084Z",
-        "line": 20,
+        "start_timestamp": "2022-10-04T09:47:32.705Z",
+        "line": 19,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
         "id": "as-a-user--i-can-calculate-the-sum-of-two-numbers;as-a-user--i-can-calculate-the-sum-of-two-numbers;;5",
@@ -507,9 +496,10 @@
         "steps": [
           {
             "result": {
+              "duration": 79500,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I have entered 4 into the calculator",
             "match": {
               "arguments": [
@@ -526,7 +516,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I have entered 50 into the calculator",
             "match": {
               "arguments": [
@@ -543,7 +533,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I press add",
             "match": {
               "location": "calculator.StepDefinitions.i_press_add()"
@@ -554,7 +544,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "the result should be 54 on the screen",
             "match": {
               "arguments": [
@@ -576,16 +566,13 @@
             "name": "@NEMCRM-2823"
           },
           {
-            "name": "@NEMCRM-2850"
-          },
-          {
             "name": "@NEMCRM-2826"
           }
         ]
       },
       {
-        "start_timestamp": "2022-09-28T14:56:06.086Z",
-        "line": 21,
+        "start_timestamp": "2022-10-04T09:47:32.708Z",
+        "line": 20,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
         "id": "as-a-user--i-can-calculate-the-sum-of-two-numbers;as-a-user--i-can-calculate-the-sum-of-two-numbers;;6",
@@ -596,7 +583,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I have entered 5 into the calculator",
             "match": {
               "arguments": [
@@ -613,7 +600,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I have entered 50 into the calculator",
             "match": {
               "arguments": [
@@ -628,9 +615,10 @@
           },
           {
             "result": {
+              "duration": 323200,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I press add",
             "match": {
               "location": "calculator.StepDefinitions.i_press_add()"
@@ -639,10 +627,10 @@
           },
           {
             "result": {
-              "duration": 15800,
+              "duration": 104300,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "the result should be 55 on the screen",
             "match": {
               "arguments": [
@@ -662,9 +650,6 @@
           },
           {
             "name": "@NEMCRM-2823"
-          },
-          {
-            "name": "@NEMCRM-2850"
           },
           {
             "name": "@NEMCRM-2826"
@@ -700,8 +685,8 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-09-28T14:56:06.088Z",
-        "line": 9,
+        "start_timestamp": "2022-10-04T09:47:32.711Z",
+        "line": 8,
         "name": "simple integer addition 2",
         "description": "",
         "id": "as-a-user--i-can-calculate-the-sum-of-two-numbers;simple-integer-addition-2",
@@ -710,9 +695,10 @@
         "steps": [
           {
             "result": {
+              "duration": 25200,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I have entered 3 into the calculator",
             "match": {
               "arguments": [
@@ -727,10 +713,9 @@
           },
           {
             "result": {
-              "duration": 1000100,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I have entered 2 into the calculator",
             "match": {
               "arguments": [
@@ -745,9 +730,10 @@
           },
           {
             "result": {
+              "duration": 690300,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I press add",
             "match": {
               "location": "calculator.StepDefinitions.i_press_add()"
@@ -756,9 +742,10 @@
           },
           {
             "result": {
+              "duration": 74400,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "the result should be 5 on the screen",
             "match": {
               "arguments": [
@@ -778,9 +765,6 @@
           },
           {
             "name": "@NEMCRM-2823"
-          },
-          {
-            "name": "@NEMCRM-2850"
           },
           {
             "name": "@NEMCRM-2840"
