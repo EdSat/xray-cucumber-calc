@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="calculator.RunCucumberTest" time="0.322" errors="0" skipped="0">
+<testsuite tests="8" failures="1" name="calculator.RunCucumberTest" time="0.378" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.3.1+2-LTS-6"/>
@@ -63,12 +63,37 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="As a user, I can calculate the sum of two numbers #1" name="simple integer addition" time="0.301"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #2" name="As a user, I can multiply two numbers" time="0.002"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #1" time="0.007"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #2" time="0.002"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #3" time="0.002"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #4" time="0.002"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #5" time="0.002"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #4" name="simple integer addition 2" time="0.004"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #1" name="simple integer addition" time="0.338"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #2" name="As a user, I can multiply two numbers" time="0.007">
+    <failure message="expected:&lt;0&gt; but was:&lt;1000&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1000&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:36)
+	at ✽.the result should be 0 on the screen(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2825.feature:12)
+</failure>
+    <system-out>
+@NEMCRM-2850 @NEMCRM-2823 @NEMCRM-2825
+Scenario: As a user, I can multiply two numbers &amp;#27;[90m# features/1_NEMCRM-2825.feature:8&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI have entered &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1000&amp;#27;[0m&amp;#27;[32m into the calculator&amp;#27;[0m &amp;#27;[90m# calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI have entered &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m0&amp;#27;[0m&amp;#27;[32m into the calculator&amp;#27;[0m      &amp;#27;[90m# calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI press multiply&amp;#27;[0m                         &amp;#27;[90m# calculator.StepDefinitions.i_press_multiply()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mthe result should be &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m0&amp;#27;[0m&amp;#27;[31m on the screen&amp;#27;[0m     &amp;#27;[90m# calculator.StepDefinitions.the_result_should_be_on_the_screen(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1000&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:36)
+	at âœ½.the result should be 0 on the screen(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2825.feature:12)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #1" time="0.016"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #2" time="0.005"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #3" time="0.003"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #4" time="0.003"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #5" time="0.003"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #4" name="simple integer addition 2" time="0.003"/>
 </testsuite>
