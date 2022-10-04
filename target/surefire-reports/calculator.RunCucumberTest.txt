@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: calculator.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.971 sec <<< FAILURE!
-simple integer addition(As a user, I can calculate the sum of two numbers #1)  Time elapsed: 0.348 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<5> but was:<3>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:36)
-	at ?.the result should be 5 on the screen(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2824.feature:12)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.855 sec
