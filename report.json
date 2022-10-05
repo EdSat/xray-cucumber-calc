@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-10-04T13:42:34.664Z",
+        "start_timestamp": "2022-10-05T06:49:27.999Z",
         "line": 8,
         "name": "simple integer addition",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000600,
+              "duration": 1009900,
               "status": "passed"
             },
             "line": 9,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 209549800,
+              "duration": 997700,
               "status": "passed"
             },
             "line": 11,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 998200,
+              "duration": 1001100,
               "status": "passed"
             },
             "line": 12,
@@ -118,7 +118,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-10-04T13:42:34.913Z",
+        "start_timestamp": "2022-10-05T06:49:28.036Z",
         "line": 8,
         "name": "As a user, I can multiply two numbers",
         "description": "",
@@ -173,9 +173,7 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c0\u003e but was:\u003c1000\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:36)\r\n\tat ✽.the result should be 0 on the screen(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2825.feature:12)\r\n",
-              "duration": 1000300,
-              "status": "failed"
+              "status": "passed"
             },
             "line": 12,
             "name": "the result should be 0 on the screen",
@@ -232,7 +230,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-10-04T13:42:34.928Z",
+        "start_timestamp": "2022-10-05T06:49:28.039Z",
         "line": 16,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -316,7 +314,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-04T13:42:34.937Z",
+        "start_timestamp": "2022-10-05T06:49:28.045Z",
         "line": 17,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -343,6 +341,7 @@
           },
           {
             "result": {
+              "duration": 998900,
               "status": "passed"
             },
             "line": 10,
@@ -400,7 +399,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-04T13:42:34.942Z",
+        "start_timestamp": "2022-10-05T06:49:28.048Z",
         "line": 18,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -427,7 +426,6 @@
           },
           {
             "result": {
-              "duration": 1000400,
               "status": "passed"
             },
             "line": 10,
@@ -485,7 +483,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-04T13:42:34.946Z",
+        "start_timestamp": "2022-10-05T06:49:28.051Z",
         "line": 19,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -512,6 +510,7 @@
           },
           {
             "result": {
+              "duration": 999500,
               "status": "passed"
             },
             "line": 10,
@@ -569,7 +568,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-04T13:42:34.948Z",
+        "start_timestamp": "2022-10-05T06:49:28.053Z",
         "line": 20,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -579,6 +578,7 @@
         "steps": [
           {
             "result": {
+              "duration": 998500,
               "status": "passed"
             },
             "line": 9,
@@ -681,7 +681,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-10-04T13:42:34.950Z",
+        "start_timestamp": "2022-10-05T06:49:28.055Z",
         "line": 8,
         "name": "simple integer addition 2",
         "description": "",
@@ -708,7 +708,6 @@
           },
           {
             "result": {
-              "duration": 1011400,
               "status": "passed"
             },
             "line": 10,

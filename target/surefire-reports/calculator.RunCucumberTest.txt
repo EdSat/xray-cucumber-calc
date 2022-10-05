@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: calculator.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.928 sec <<< FAILURE!
-As a user, I can multiply two numbers(As a user, I can calculate the sum of two numbers #2)  Time elapsed: 0.007 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<0> but was:<1000>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:36)
-	at ?.the result should be 0 on the screen(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2825.feature:12)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 sec
