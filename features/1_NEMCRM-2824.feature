@@ -2,6 +2,12 @@
 @NEMCRM-2823
 Feature: As a user, I can calculate the sum of two numbers
 	#As a user, I can calculate the sum of two numbers
+	
+	Background:
+		Given that I am on the base url
+		When I login
+		Then I am logged in successfully
+		When I create a new Wareneingang
 
 	#Simple integer addition
 	@NEMCRM-2824

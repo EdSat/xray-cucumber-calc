@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: calculator.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 sec
+Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.707 sec <<< FAILURE!
+simple integer addition(As a user, I can calculate the sum of two numbers #1)  Time elapsed: 0.217 sec  <<< ERROR!
+io.cucumber.java.PendingException: TODO: implement me
+	at calculator.StepDefinitions.that_i_am_on_the_base_url(StepDefinitions.java:43)
+	at ?.that I am on the base url(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2824.feature:8)
+

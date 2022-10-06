@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="calculator.RunCucumberTest" time="0.132" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="calculator.RunCucumberTest" time="0.261" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.3.1+2-LTS-6"/>
@@ -63,12 +63,33 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="As a user, I can calculate the sum of two numbers #1" name="simple integer addition" time="0.109"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #2" name="As a user, I can multiply two numbers" time="0.003"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #1" time="0.006"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #1" name="simple integer addition" time="0.217">
+    <error message="TODO: implement me" type="io.cucumber.java.PendingException">io.cucumber.java.PendingException: TODO: implement me
+	at calculator.StepDefinitions.that_i_am_on_the_base_url(StepDefinitions.java:43)
+	at ✽.that I am on the base url(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2824.feature:8)
+</error>
+    <system-out>
+@NEMCRM-2850 @NEMCRM-2823 @NEMCRM-2824
+Scenario: simple integer addition            &amp;#27;[90m# features/1_NEMCRM-2824.feature:15&amp;#27;[0m
+  &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mthat I am on the base url&amp;#27;[0m            &amp;#27;[90m# calculator.StepDefinitions.that_i_am_on_the_base_url()&amp;#27;[0m
+      &amp;#27;[33mio.cucumber.java.PendingException: TODO: implement me
+	at calculator.StepDefinitions.that_i_am_on_the_base_url(StepDefinitions.java:43)
+	at âœ½.that I am on the base url(file:///C:/dev/xray-cucumber-calc/features/1_NEMCRM-2824.feature:8)
+&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI login&amp;#27;[0m                               &amp;#27;[90m# calculator.StepDefinitions.i_login()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI am logged in successfully&amp;#27;[0m           &amp;#27;[90m# calculator.StepDefinitions.i_am_logged_in_successfully()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI create a new Wareneingang&amp;#27;[0m           &amp;#27;[90m# calculator.StepDefinitions.i_create_a_new_wareneingang()&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI have entered &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m1&amp;#27;[0m&amp;#27;[36m into the calculator&amp;#27;[0m &amp;#27;[90m# calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI have entered &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[36m into the calculator&amp;#27;[0m   &amp;#27;[90m# calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI press add&amp;#27;[0m                           &amp;#27;[90m# calculator.StepDefinitions.i_press_add()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mthe result should be &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m3&amp;#27;[0m&amp;#27;[36m on the screen&amp;#27;[0m  &amp;#27;[90m# calculator.StepDefinitions.the_result_should_be_on_the_screen(java.lang.Integer)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="As a user, I can calculate the sum of two numbers #2" name="As a user, I can multiply two numbers" time="0.015"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #1" time="0.015"/>
   <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #2" time="0.003"/>
   <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #3" time="0.003"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #4" time="0.002"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #5" time="0.003"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #4" time="0.003"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #5" time="0.002"/>
   <testcase classname="As a user, I can calculate the sum of two numbers #4" name="simple integer addition 2" time="0.003"/>
 </testsuite>
