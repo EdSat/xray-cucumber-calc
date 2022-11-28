@@ -1,0 +1,3 @@
+artifact-repository:                                                    # required
+    ecr-endpoint: "740079610737.dkr.ecr.eu-central-1.amazonaws.com"     # optional, defaults to 740079610737.dkr.ecr.eu-central-1.amazonaws.com
+    repository: "pa/platform/testapp"                                   # required

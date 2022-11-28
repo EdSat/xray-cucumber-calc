@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-10-13T09:53:17.458Z",
+        "start_timestamp": "2022-10-25T09:06:50.728Z",
         "line": 8,
         "name": "simple integer addition",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1990100,
+              "duration": 1999900,
               "status": "passed"
             },
             "line": 9,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 998600,
+              "duration": 999700,
               "status": "passed"
             },
             "line": 11,
@@ -60,7 +60,6 @@
           },
           {
             "result": {
-              "duration": 999800,
               "status": "passed"
             },
             "line": 12,
@@ -118,7 +117,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-10-13T09:53:17.494Z",
+        "start_timestamp": "2022-10-25T09:06:50.766Z",
         "line": 8,
         "name": "As a user, I can multiply two numbers",
         "description": "",
@@ -230,7 +229,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-10-13T09:53:17.498Z",
+        "start_timestamp": "2022-10-25T09:06:50.770Z",
         "line": 16,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -257,7 +256,6 @@
           },
           {
             "result": {
-              "duration": 1000300,
               "status": "passed"
             },
             "line": 10,
@@ -315,7 +313,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-13T09:53:17.503Z",
+        "start_timestamp": "2022-10-25T09:06:50.775Z",
         "line": 17,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -399,7 +397,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-13T09:53:17.505Z",
+        "start_timestamp": "2022-10-25T09:06:50.778Z",
         "line": 18,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -483,7 +481,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-13T09:53:17.507Z",
+        "start_timestamp": "2022-10-25T09:06:50.780Z",
         "line": 19,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -567,7 +565,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-13T09:53:17.509Z",
+        "start_timestamp": "2022-10-25T09:06:50.782Z",
         "line": 20,
         "name": "As a user, I can calculate the sum of two numbers",
         "description": "",
@@ -611,6 +609,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 11,
@@ -679,7 +678,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-10-13T09:53:17.511Z",
+        "start_timestamp": "2022-10-25T09:06:50.785Z",
         "line": 8,
         "name": "simple integer addition 2",
         "description": "",
@@ -689,6 +688,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 9,
@@ -734,6 +734,7 @@
           },
           {
             "result": {
+              "duration": 998800,
               "status": "passed"
             },
             "line": 12,

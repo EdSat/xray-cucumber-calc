@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="calculator.RunCucumberTest" time="0.126" errors="0" skipped="0">
+<testsuite tests="8" failures="2" name="calculator.RunCucumberTest" time="0.109" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.3.1+2-LTS-6"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk-17.0.3.1\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\dev\xray-cucumber-calc"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\dev\xray.test.repo"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
-    <property name="cucumber.features" value="features/"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
     <property name="user.country" value="DE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\dev\xray-cucumber-calc"/>
+    <property name="user.dir" value="C:\dev\xray.test.repo"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="17.0.3.1+2-LTS-6"/>
     <property name="os.arch" value="amd64"/>
-    <property name="cucumber.plugin" value="json:report.json"/>
     <property name="java.io.tmpdir" value="C:\Users\Satar_E\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -45,7 +43,7 @@
     <property name="java.class.path" value="C:\Program Files (x86)\Maven\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean compile test -D cucumber.plugin=json:report.json -D cucumber.features=features/"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.home" value="C:\Program Files (x86)\Java\jdk-17.0.3.1"/>
     <property name="user.language" value="de"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,12 +61,62 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="As a user, I can calculate the sum of two numbers #1" name="simple integer addition" time="0.106"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #2" name="As a user, I can multiply two numbers" time="0.004"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #1" time="0.005"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #2" time="0.003"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #1" name="simple integer addition" time="0.095">
+    <failure message="expected:&lt;3&gt; but was:&lt;4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;4&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:37)
+	at ✽.the result should be 3 on the screen(classpath:calculator/1_NEMCRM-2824.feature:12)
+</failure>
+    <system-out>
+@NEMCRM-2850 @NEMCRM-2823 @NEMCRM-2824
+Scenario: simple integer addition            &amp;#27;[90m# calculator/1_NEMCRM-2824.feature:8&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI have entered &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[32m into the calculator&amp;#27;[0m &amp;#27;[90m# calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI have entered &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[32m into the calculator&amp;#27;[0m   &amp;#27;[90m# calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI press add&amp;#27;[0m                           &amp;#27;[90m# calculator.StepDefinitions.i_press_add()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mthe result should be &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m3&amp;#27;[0m&amp;#27;[31m on the screen&amp;#27;[0m  &amp;#27;[90m# calculator.StepDefinitions.the_result_should_be_on_the_screen(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: expected:&lt;3&gt; but was:&lt;4&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:37)
+	at âœ½.the result should be 3 on the screen(classpath:calculator/1_NEMCRM-2824.feature:12)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="As a user, I can calculate the sum of two numbers #2" name="As a user, I can multiply two numbers" time="0.003">
+    <failure message="expected:&lt;0&gt; but was:&lt;1000&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1000&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:37)
+	at ✽.the result should be 0 on the screen(classpath:calculator/1_NEMCRM-2825.feature:12)
+</failure>
+    <system-out>
+@NEMCRM-2850 @NEMCRM-2823 @NEMCRM-2825
+Scenario: As a user, I can multiply two numbers &amp;#27;[90m# calculator/1_NEMCRM-2825.feature:8&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI have entered &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1000&amp;#27;[0m&amp;#27;[32m into the calculator&amp;#27;[0m &amp;#27;[90m# calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI have entered &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1&amp;#27;[0m&amp;#27;[32m into the calculator&amp;#27;[0m      &amp;#27;[90m# calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI press multiply&amp;#27;[0m                         &amp;#27;[90m# calculator.StepDefinitions.i_press_multiply()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mthe result should be &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m0&amp;#27;[0m&amp;#27;[31m on the screen&amp;#27;[0m     &amp;#27;[90m# calculator.StepDefinitions.the_result_should_be_on_the_screen(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1000&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at calculator.StepDefinitions.the_result_should_be_on_the_screen(StepDefinitions.java:37)
+	at âœ½.the result should be 0 on the screen(classpath:calculator/1_NEMCRM-2825.feature:12)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #1" time="0.002"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #2" time="0.002"/>
   <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #3" time="0.002"/>
   <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #4" time="0.001"/>
   <testcase classname="As a user, I can calculate the sum of two numbers #3" name="As a user, I can calculate the sum of two numbers #5" time="0.002"/>
-  <testcase classname="As a user, I can calculate the sum of two numbers #4" name="simple integer addition 2" time="0.003"/>
+  <testcase classname="As a user, I can calculate the sum of two numbers #4" name="simple integer addition 2" time="0.002"/>
 </testsuite>
